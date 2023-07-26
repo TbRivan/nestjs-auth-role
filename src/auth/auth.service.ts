@@ -154,7 +154,7 @@ export class AuthService {
     const jwtPayload: JwtPayload = {
       id: userId,
       email: email,
-      role: role,
+      roles: role,
     };
 
     const atSecret = this.config.get('JWT_ATSECRET');
